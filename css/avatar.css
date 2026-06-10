@@ -1,0 +1,10 @@
+.original-image {
+  width: 500px;
+  height: 330px;
+  margin-bottom: 20px;
+  background: url("https://storage.googleapis.com/learn-javascript-projects/cat1.png");
+  background-size: cover;
+}
+.square {
+  background-color: red;
+}

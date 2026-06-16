@@ -10,3 +10,7 @@
 .btn-wrap {
   display: block;
 }
+#avat-img {
+  border-style: solid;
+  border-width: 6px;
+}

@@ -12,5 +12,6 @@
 }
 #avat-img {
   border-style: solid;
-  border-width: 6px;
+  border-width: 8px;
+  border-radius: 25%;
 }

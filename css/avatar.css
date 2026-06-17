@@ -12,6 +12,7 @@
 }
 #avat-img {
   border-style: solid;
-  border-width: 8px;
+  border-width: 9px;
   border-radius: 25%;
+  border-color: rgb(53, 151, 126, 1);
 }

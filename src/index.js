@@ -1,4 +1,5 @@
 const border_slide = document.querySelector("#brdr-range");
+const img_size = document.querySelector("#img-range");
 const border_clrpck = document.querySelector("#clr-pick");
 const border_rad = document.querySelector("#avat-img");
 border_slide.addEventListener("change", (event) => {
@@ -7,7 +8,11 @@ border_slide.addEventListener("change", (event) => {
     // border_rad.style = `border-radius:${Number(event.target.value)}%`;
     border_rad.style.borderRadius = Number(event.target.value) + "%";
 });
-
+img_size.addEventListener("change", event => {
+  console.log(event.target.value);
+  document.querySelector("#avat-img").width = event.target.value;
+  document.querySelector("#avat-img").height = event.target.value;
+})
 border_clrpck.addEventListener("change", event => {
   console.log(event.target.value);
   border_rad.style.borderColor = event.target.value;

@@ -27,12 +27,22 @@ const avImg = document.querySelector("#avat-img");
 btnImg1.addEventListener("click", (event) => {
   console.log(event.target.dataset.image);
   avImg.src = event.target.dataset.image;
+  console.log(event.target);
+  event.target.disabled = true;
+  btnImg2.disabled = false;
+  btnImg3.disabled = false;
 });
 btnImg2.addEventListener("click", (event) => {
   console.log(event.target.dataset.image);
   avImg.src = event.target.dataset.image;
+  event.target.disabled = true;
+  btnImg1.disabled = false;
+  btnImg3.disabled = false;
 });
 btnImg3.addEventListener("click", (event) => {
   console.log(event);
   avImg.src = event.target.dataset.image;
+  event.target.disabled = true;
+  btnImg1.disabled = false;
+  btnImg2.disabled = false;
 });

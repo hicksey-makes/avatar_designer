@@ -33,6 +33,7 @@ btnImg1.addEventListener("click", (event) => {
   event.target.disabled = true;
   btnImg2.disabled = false;
   btnImg3.disabled = false;
+  localStorage.setItem("imgSource", event.target.dataset.image);
 });
 btnImg2.addEventListener("click", (event) => {
   console.log(event.target.dataset.image);
@@ -40,6 +41,7 @@ btnImg2.addEventListener("click", (event) => {
   event.target.disabled = true;
   btnImg1.disabled = false;
   btnImg3.disabled = false;
+  localStorage.setItem("imgSource", event.target.dataset.image);
 });
 btnImg3.addEventListener("click", (event) => {
   console.log(event);
@@ -47,9 +49,11 @@ btnImg3.addEventListener("click", (event) => {
   event.target.disabled = true;
   btnImg1.disabled = false;
   btnImg2.disabled = false;
+  localStorage.setItem("imgSource", event.target.dataset.image);
 });
 document.querySelector("body").onload = function() {
   console.log("I'm loaded!!");
   border_rad.style.borderColor = localStorage.getItem("borderColor");
   border_rad.style.borderRadius = Number(localStorage.getItem("borderRadius")) + "%";
+  avImg.src = localStorage.getItem("imgSource");
 }

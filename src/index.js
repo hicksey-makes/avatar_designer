@@ -7,15 +7,17 @@ border_slide.addEventListener("change", (event) => {
     console.log(border_rad);
     // border_rad.style = `border-radius:${Number(event.target.value)}%`;
     border_rad.style.borderRadius = Number(event.target.value) + "%";
-});
+    localStorage.setItem("borderRadius", event.target.value);
+  });
 img_size.addEventListener("change", event => {
   console.log(event.target.value);
   document.querySelector("#avat-img").width = event.target.value;
   document.querySelector("#avat-img").height = event.target.value;
-})
+});
 border_clrpck.addEventListener("change", event => {
   console.log(event.target.value);
   border_rad.style.borderColor = event.target.value;
+  localStorage.setItem("borderColor", event.target.value);
 });
 
 const btnImg1 = document.querySelector("#btn-img1");
@@ -46,3 +48,8 @@ btnImg3.addEventListener("click", (event) => {
   btnImg1.disabled = false;
   btnImg2.disabled = false;
 });
+document.querySelector("body").onload = function() {
+  console.log("I'm loaded!!");
+  border_rad.style.borderColor = localStorage.getItem("borderColor");
+  border_rad.style.borderRadius = Number(localStorage.getItem("borderRadius")) + "%";
+}

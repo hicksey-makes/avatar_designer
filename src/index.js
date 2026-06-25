@@ -25,6 +25,8 @@ const btnImg2 = document.querySelector("#btn-img2");
 const btnImg3 = document.querySelector("#btn-img3");
 
 const avImg = document.querySelector("#avat-img");
+const btns = document.querySelectorAll(".img-btn");
+console.log(btns);
 
 btnImg1.addEventListener("click", (event) => {
   console.log(event.target.dataset.image);
@@ -44,7 +46,7 @@ btnImg2.addEventListener("click", (event) => {
   localStorage.setItem("imgSource", event.target.dataset.image);
 });
 btnImg3.addEventListener("click", (event) => {
-  console.log(event);
+  console.log(event.target.dataset.image);
   avImg.src = event.target.dataset.image;
   event.target.disabled = true;
   btnImg1.disabled = false;
@@ -56,4 +58,16 @@ document.querySelector("body").onload = function() {
   border_rad.style.borderColor = localStorage.getItem("borderColor");
   border_rad.style.borderRadius = Number(localStorage.getItem("borderRadius")) + "%";
   avImg.src = localStorage.getItem("imgSource");
+  const enabBtn = localStorage.getItem("imgSource");
+  console.log(enabBtn);
+  btns.forEach(btn => {
+    console.log(btn);
+    console.log(btn.dataset.image);
+    if (btn.dataset.image === enabBtn) {
+      btn.disabled = true;
+      console.log(btn);
+      console.log("found!");
+    }
+  })
+
 }

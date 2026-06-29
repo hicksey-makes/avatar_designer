@@ -3,6 +3,7 @@
   height: 330px; */
   margin-bottom: 20px;
 }
+
 .square {
   background-color: red;
 }
@@ -10,12 +11,46 @@
 .btn-wrap {
   display: block;
 }
+
 #avat-img {
   border-style: solid;
-  border-width: 9px;
+  border-width: 4px;
   border-radius: 25%;
   border-color: rgb(53, 151, 126, 1);
 }
+
 .disabled {
   disabled: true;
+}
+
+.main {
+  width: 800px;
+  height: 469px;
+  position: fixed;
+  top: 71px;
+  left: 100px;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+
+.main-inner {
+  position: absolute;
+  /* left: 25%; */
+  width: 100%;
+  text-align: center;
+}
+
+.main-inner h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+.main-inner p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
 }

@@ -4,38 +4,46 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="css/avatar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vite-project</title>
   </head>
   <body onload="loaded()">
-    <div id="app"></div>
-    <div class="page-content">
-      <h1>Avatar Designer</h1>
-      <p>Upload your image or try one of the provided options</p>
-      <div class="original-image">
-        <img src="example/cat2.jpg" width="450" height="450" id="avat-img" alt="house cat viewing camera"  />
-        <div class="square">
+    <!-- <div id="app"></div> -->
+    <navbar class="">
+    </navbar>
+    <main class="page-content main">
+      <div class="main-inner">
+        <h1>Avatar Designer (Beginner)</h1>
+        <p>Upload your image or try one of the provided options</p>
+        <div class="original-image">
+          <img src="example/cat2.jpg" width="138" height="138" id="avat-img" alt="house cat viewing camera"  />
+          <div class="square">
+
+          </div>
 
         </div>
+        <div class="btn-wrap">
+          <button class="img-btn" id="btn-img1" data-image="example/cat1.png">Image 1</button>
+          <button class="img-btn" id="btn-img2" data-image="example/cat2.jpg">Image 2</button>
+          <button class="img-btn" id="btn-img3" data-image="example/cat3.png">Image 3</button>
+        </div>
+        <div class="slider-wrap">
+          <p>Adjust border radius:</p>
+          <input type="range" min="0" value="25" max="50" id="brdr-range" />
+          <!-- <p>Adjust image size:</p> -->
+          <!-- <input type="range" min="138" max="138" id="img-range" /> -->
+        </div>
+        <div class="clr-pick-wrap">
+          <p>Choose border color:</p>
+          <input type="color" value="#35977E" id="clr-pick" />
+        </div>
+      </div>
 
-      </div>
-      <div class="btn-wrap">
-        <button class="img-btn" id="btn-img1" data-image="example/cat1.png">Image 1</button>
-        <button class="img-btn" id="btn-img2" data-image="example/cat2.jpg">Image 2</button>
-        <button class="img-btn" id="btn-img3" data-image="example/cat3.png">Image 3</button>
-      </div>
-      <div class="slider-wrap">
-        <p>Adjust border radius:</p>
-        <input type="range" min="0" value="25" max="50" id="brdr-range" />
-        <p>Adjust image size:</p>
-        <input type="range" min="340" max="600" id="img-range" />
-      </div>
-      <div class="clr-pick-wrap">
-        <p>Choose border color:</p>
-        <input type="color" value="#35977E" id="clr-pick" />
-      </div>
 
-    </div>
+    </main>
 
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/index.js"></script>

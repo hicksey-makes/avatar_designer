@@ -9,11 +9,11 @@ border_slide.addEventListener("change", (event) => {
     border_rad.style.borderRadius = Number(event.target.value) + "%";
     localStorage.setItem("borderRadius", event.target.value);
   });
-img_size.addEventListener("change", event => {
-  console.log(event.target.value);
-  document.querySelector("#avat-img").width = event.target.value;
-  document.querySelector("#avat-img").height = event.target.value;
-});
+// img_size.addEventListener("change", event => {
+//   console.log(event.target.value);
+//   document.querySelector("#avat-img").width = event.target.value;
+//   document.querySelector("#avat-img").height = event.target.value;
+// });
 border_clrpck.addEventListener("change", event => {
   console.log(event.target.value);
   border_rad.style.borderColor = event.target.value;

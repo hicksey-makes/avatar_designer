@@ -18,8 +18,8 @@
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color: #000000;
+  background: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -53,7 +53,7 @@
 body {
   margin: 0;
 }
-
+/*
 h1,
 h2 {
   font-family: var(--heading);
@@ -81,7 +81,7 @@ h2 {
 }
 p {
   margin: 0;
-}
+} */
 
 code,
 .counter {

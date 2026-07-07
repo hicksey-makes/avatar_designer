@@ -56,8 +56,11 @@ btnImg3.addEventListener("click", (event) => {
 document.querySelector("body").onload = function() {
   console.log("I'm loaded!!");
   border_rad.style.borderColor = localStorage.getItem("borderColor");
+  console.log(localStorage.getItem("borderColor"));
   border_rad.style.borderRadius = Number(localStorage.getItem("borderRadius")) + "%";
   avImg.src = localStorage.getItem("imgSource");
+  border_slide.value = Number(localStorage.getItem("borderRadius"));
+  border_clrpck.value = localStorage.getItem("borderColor");
   const enabBtn = localStorage.getItem("imgSource");
   console.log(enabBtn);
   btns.forEach(btn => {

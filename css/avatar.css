@@ -54,3 +54,8 @@
   font-size: 14px;
   line-height: 100%;
 }
+
+#brdr-range {
+  width: 98px;
+  height: 12px;
+}

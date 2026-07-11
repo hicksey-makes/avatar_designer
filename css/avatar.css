@@ -9,9 +9,15 @@
 }
 
 .btn-wrap {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
+.btn-inwrap {
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+}
 #avat-img {
   border-style: solid;
   border-width: 4px;
@@ -58,4 +64,14 @@
 #brdr-range {
   width: 98px;
   height: 12px;
+}
+
+.img-btn {
+  width: 67px;
+  height: 33px;
+  border-radius: 4px;
+  background-color: #3498db;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
 }

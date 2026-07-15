@@ -76,3 +76,26 @@
   font-family: "Inter", sans-serif;
   border: none;
 }
+
+.navbar {
+  width: 100%;
+}
+.navbar ul {
+  background-color: #3498db;
+  list-style-type: none;
+  margin: 0;
+  padding: 12px;
+  overflow: hidden;
+  display: flex;
+  padding-left: 85px;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+.navbar ul li {
+  float: left;
+  padding: 0px 12px;
+}

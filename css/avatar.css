@@ -111,3 +111,10 @@
   margin-top: 25px;
   margin-bottom: 3px;
 }
+
+.clr-pick-wrap p {
+  margin-top: 16px;
+  padding: 1.5px 0px;
+  letter-spacing: 0%;
+  margin-bottom: 12px;
+}

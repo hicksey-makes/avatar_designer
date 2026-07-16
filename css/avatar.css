@@ -117,6 +117,10 @@ body {
   padding: 0px 11px;
 }
 
+.slider-wrap input {
+  margin-top: 9px;
+}
+
 .slider-wrap p {
   letter-spacing: 0%;
   padding: 1.5px 0px;

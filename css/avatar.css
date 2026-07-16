@@ -134,3 +134,9 @@ body {
   letter-spacing: 0%;
   margin-bottom: 12px;
 }
+#clr-pick {
+  border-image: url("../example/cbed6114b04a2a6cbc7aadf741405afd269c6181.png");
+  border-width: 0px;
+  width: 34px;
+  height: 21px;
+}

@@ -79,6 +79,7 @@
 
 .navbar {
   width: 100%;
+
 }
 .navbar ul {
   background-color: #3498db;
@@ -87,15 +88,19 @@
   padding: 12px;
   overflow: hidden;
   display: flex;
-  padding-left: 85px;
+  padding-left: 88px;
 }
 .navbar ul a {
   text-decoration: none;
   color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 
 .navbar ul li {
   float: left;
-  padding: 0px 12px;
+  padding: 0px 11px;
 }

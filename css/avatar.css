@@ -104,3 +104,10 @@
   float: left;
   padding: 0px 11px;
 }
+
+.slider-wrap p {
+  letter-spacing: 0%;
+  padding: 1.5px 0px;
+  margin-top: 25px;
+  margin-bottom: 3px;
+}
